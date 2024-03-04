@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dist/img/icon-black.png">
+    <title>Portfolio | Putra</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/output.css">
+    <link rel="stylesheet" href="dist/css/swiper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body class="dark:bg-background font-din dark:text-white text-textLight bg-bgVal relative" data-barba="wrapper">
+    <div>
+        <!-- loading start -->
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+        <div id="preloader">
+            <div class="p">Loading</div>
+        </div>
+        <!-- loading end -->
+
+
+        <!-- header start -->
+        <header
+            class="fixed top-0 w-full flex justify-center transition duration-300 ease-linear z-[99] bgVal bg-blackval dark:bg-background dark:bg-opacity-70 dark:backdrop-blur-sm backdrop-blur-sm border-b-[0.2px]  border-textLight dark:border-white border-opacity-20 dark:border-opacity-20">
+            <div class="container flex justify-between items-center px-3 py-2">
+                <div class="px-4 py-3">
+                    <a href="index.html" class="logo dark:hidden"><img src="dist/img/icon.png" alt="Logo Azkazikna"
+                            class="w-[45px] lg:w-[55px]"></a>
+                    <a href="index.html" class="logo hidden dark:block"><img src="dist/img/logo.png"
+                            alt="Logo Azkazikna" class="w-[85px]"></a>
+                </div>
+                <button class="hamburger px-4 py-3 lg:hidden" type="button">
+                    <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                </button>
+                <nav class="hidden absolute top-full right-4 px-4 py-4 min-w-[250px] dark:border-white lg:static lg:block lg:border-0 bg-blackval dark:bg-background dark:border-opacity-20 dark:lg:bg-transparent lg:bg-transparent lg:shadow-none"
+                    data-barba-prevent="all">
+                    <ul class="lg:flex gap-5 items-center">
+                        <li
+                            class="text-lightval dark:text-white text-base dark:font-extralight mt-3 hover:scale-105 transition duration-300 ease-linear lg:mt-0">
+                            <a id="nav-items" href="#about">About
+                            </a>
+                        </li>
+                        <li
+                            class="text-lightval dark:text-white text-base dark:font-extralight mt-3 hover:scale-105 transition duration-300 ease-linear lg:mt-0">
+                            <a id="nav-items" href="#work">
+                                Experience
+                            </a>
+                        </li>
+                        <li
+                            class="text-lightval dark:text-white text-base dark:font-extralight mt-3 hover:scale-105 transition duration-300 ease-linear lg:mt-0">
+                            <a id="nav-items" href="#built">
+                                Work
+                            </a>
+                        </li>
+                        <li
+                            class="text-lightval dark:text-white text-base dark:font-extralight mt-3 hover:scale-105 transition duration-300 ease-linear lg:mt-0">
+                            <a id="nav-items" href="#contact">Contact
+                            </a>
+                        </li>
+                        <li class="mt-3 lg:mt-0">
+                            <a id="nav-items" href="dist/pdf/putra praditya hariyantoro.pdf"
+                                class="buttonAnimate relative text-lightval dark:text-primary dark:font-extralight border-[1px] py-2 px-2 border-lightval dark:border-primary hover:text-bgLight dark:hover:text-background hover:border-background transition duration-300 ease-in">
+                                Resume
+                            </a>
+                        </li>
+                        <li class="ml-4 mt-6 lg:mt-0">
+                            <input type="checkbox" class="opacity-0 absolute top-0 group" id="toggleMode">
+                            <label for="toggleMode"
+                                class="w-[50px] h-[26px] bg-lightval flex rounded-full items-center justify-between p-[5px] relative scale-150 cursor-pointe transition duration-300 ease-linear cursor-pointer">
+                                <i class="fas fa-moon text-blackval"></i>
+                                <i class="fa-solid fa-sun text-blackval text-sm"></i>
+                                <div
+                                    class='ball w-5 h-5 bg-blackval absolute t-[2px] l-[2px] rounded-full transition duration-200 ease-linear'>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <main data-barba="container" data-barba-namespace="home">
+            <!-- hero section start -->
+            <section id="hero" class="flex justify-center pt-36 pb-32 lg:pt-44 lg:pb-48 relative">
+                <div class="px-4 lg:px-32 xl:px-52">
+                    <div class="w-full relative">
+                        <div class="w-4 h-4 bg-redval absolute left-full -z-20"></div>
+                        <div class="w-3 h-3 bg-redval absolute left-2/3 top-1/2 -z-20"></div>
+                        <div class="w-5 h-5 bg-redval absolute left-full top-full -z-20"></div>
+                        <p class="text-base dark:font-extralight text-textLight dark:text-primary mb-5 lg:mb-10 h-5"
+                            id="typed"></p>
+                        <div class="">
+                            <div class="w-14 h-2 bg-lightval"></div>
+                            <p
+                                class="font-bold lg:font-black font-tungsten text-6xl lg:text-7xl text-lightval select-none">
+                                00.</p>
+                        </div>
+                        <h1
+                            class="dark:text-white text-textLight font-tungsten text-5xl lg:text-8xl font-bold lg:font-black mb-2 animate-this uppercase">
+                            Putra Praditya Hariyanoro</h1>
+                        <h1
+                            class="dark:text-secondary text-textLight font-tungsten text-5xl lg:text-8xl font-bold lg:font-black mb-7 lg:mb-7 animate-this uppercase">
+                            I create solutions from <span class="text-redval">coding</span>.</h1>
+                        <p
+                            class="text-base dark:text-secondary text-paraVal lg:w-1/2 mb-9 animate-this2 overflow-hidden">
+                            Saya seorang <a href="#" class="font-semibold text-textLight dark:text-white"
+                                data-popover-target="popover-fullstack">Fullstack
+                                Web
+                                Developer</a> dari Jakarta,
+                            Indonesia. Saya menikmati logika dan struktur pemrograman   
+                            dan selalu berusaha untuk menulis kode yang elegan dan efisien, baik itu HTML, CSS, atau JS. Saya telah
+                            merancang
+                            interfaces yang ramah pengguna untuk situs web.</p>
+                        <div class="flex gap-10 items-center">
+                            <a href="dist/pdf/putra praditya hariyantoro.pdf    "
+                                class="dark:text-white font-semibold rounded transition duration-500 ease-in-out hover:scale-105"
+                                data-barba-prevent="all">
+                                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"
+                                    class="inline-block mr-2">
+                                    <g clip-path="url(#clip0_75_184)">
+                                        <path
+                                            d="M27.7083 29.1667H8.74999C4.19178 29.1694 0.395041 25.6723 0.0238517 21.1292C-0.347338 16.5861 2.83138 12.5191 7.32957 11.7819C9.39998 8.11108 13.2856 5.83845 17.5 5.83324C20.1279 5.82331 22.6806 6.71022 24.7362 8.34749C26.7547 9.94854 28.1897 12.1697 28.8196 14.6679C32.5878 15.2469 35.2739 18.631 34.9825 22.4322C34.6912 26.2335 31.5207 29.1687 27.7083 29.1667ZM17.5 8.74998C14.3379 8.75372 11.4226 10.4593 9.86999 13.214L9.18749 14.4375L7.80353 14.6635C4.81436 15.1643 2.70667 17.8708 2.95342 20.8916C3.20018 23.9124 5.71917 26.241 8.74999 26.25H27.7083C29.9958 26.2524 31.899 24.4921 32.0749 22.2114C32.2508 19.9306 30.64 17.8994 28.3792 17.551L26.46 17.2594L25.9904 15.3752C25.021 11.4768 21.5171 8.74264 17.5 8.74998ZM17.5 23.3333L11.6667 17.5H15.3854V13.125H19.6146V17.5H23.3333L17.5 23.3333Z"
+                                            class="fill-textLight dark:fill-white " />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_75_184">
+                                            <rect width="35" height="35" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Download CV</a>
+                            <div class="p-2 border-[1px] border-borderval dark:border-primary relative">
+                                <div
+                                    class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -left-1">
+                                </div>
+                                <div
+                                    class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -right-1">
+                                </div>
+                                <div class="w-2 h-2 bg-bgVal z-[9] dark:bg-background absolute top-1 left-1">
+                                </div>
+                                <div class="w-2 h-2 bg-bgVal z-[9] dark:bg-background absolute bottom-1 right-1">
+                                </div>
+                                <a href="#"
+                                    class="flex items-center relative buttonAnimate text-textLight dark:text-primary font-semibold px-7 py-2 border-[1px] border-textLight dark:border-primary hover:text-bgLight dark:hover:text-background group transition duration-300 ease-in-out overflow-hidden">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"
+                                        class="inline-block mr-2 group-hover:fill-bgLight dark:group-hover:fill-background fill-textLight dark:fill-primary transition duration-300 ease-in-out">
+                                        <path
+                                            d="M17.5 32.0833C9.44585 32.0833 2.91667 25.5541 2.91667 17.5C2.91667 9.44584 9.44585 2.91666 17.5 2.91666C25.5542 2.91666 32.0833 9.44584 32.0833 17.5C32.0745 25.5505 25.5505 32.0745 17.5 32.0833ZM17.5 5.83332C11.0567 5.83332 5.83333 11.0567 5.83333 17.5C5.83333 23.9433 11.0567 29.1667 17.5 29.1667C23.9433 29.1667 29.1667 23.9433 29.1667 17.5C29.1594 11.0597 23.9403 5.84056 17.5 5.83332ZM17.5 24.7917L10.2083 17.5L12.2646 15.4437L16.0417 19.2062V10.2083H18.9583V19.2062L22.7354 15.4437L24.7917 17.5L17.5 24.7917Z" />
+                                    </svg>Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex lg:flex-col lg:absolute lg:left-8 bottom-7 justify-start lg:justify-center items-center mt-10 lg:mt-0 gap-5">
+                        <a href="https://www.instagram.com/griz_zly9/" target="_blank">
+                            <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                                width="25" height="25" viewBox="0 0 22 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.946 5.24513C7.84058 5.24513 5.33569 7.57163 5.33569 10.456C5.33569 13.3403 7.84058 15.6668 10.946 15.6668C14.0515 15.6668 16.5564 13.3403 16.5564 10.456C16.5564 7.57163 14.0515 5.24513 10.946 5.24513ZM10.946 13.8437C8.93921 13.8437 7.29858 12.3244 7.29858 10.456C7.29858 8.58749 8.93433 7.06824 10.946 7.06824C12.9578 7.06824 14.5935 8.58749 14.5935 10.456C14.5935 12.3244 12.9529 13.8437 10.946 13.8437ZM18.0945 5.03198C18.0945 5.70771 17.5085 6.24739 16.7859 6.24739C16.0584 6.24739 15.4773 5.70318 15.4773 5.03198C15.4773 4.36079 16.0632 3.81658 16.7859 3.81658C17.5085 3.81658 18.0945 4.36079 18.0945 5.03198ZM21.8103 6.26553C21.7273 4.63743 21.3269 3.19527 20.0427 2.00708C18.7634 0.818882 17.2107 0.447005 15.4578 0.365373C13.6511 0.270136 8.23608 0.270136 6.42944 0.365373C4.6814 0.44247 3.12866 0.814347 1.84448 2.00254C0.560303 3.19074 0.164795 4.63289 0.0769043 6.26099C-0.0256348 7.93898 -0.0256348 12.9684 0.0769043 14.6464C0.159912 16.2745 0.560303 17.7166 1.84448 18.9048C3.12866 20.093 4.67651 20.4649 6.42944 20.5465C8.23608 20.6418 13.6511 20.6418 15.4578 20.5465C17.2107 20.4694 18.7634 20.0976 20.0427 18.9048C21.322 17.7166 21.7224 16.2745 21.8103 14.6464C21.9128 12.9684 21.9128 7.94351 21.8103 6.26553ZM19.4763 16.4468C19.0955 17.3357 18.3582 18.0205 17.3962 18.3788C15.9558 18.9094 12.5378 18.7869 10.946 18.7869C9.35425 18.7869 5.9314 18.9048 4.49585 18.3788C3.53882 18.025 2.80151 17.3402 2.41577 16.4468C1.84448 15.109 1.97632 11.9344 1.97632 10.456C1.97632 8.97751 1.84937 5.79841 2.41577 4.4651C2.79663 3.57622 3.53394 2.89142 4.49585 2.53315C5.93628 2.00254 9.35425 2.12499 10.946 2.12499C12.5378 2.12499 15.9607 2.00708 17.3962 2.53315C18.3533 2.88688 19.0906 3.57168 19.4763 4.4651C20.0476 5.80295 19.9158 8.97751 19.9158 10.456C19.9158 11.9344 20.0476 15.1135 19.4763 16.4468Z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Putrapraditya " target="_blank">
+                            <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                                width="25" height="25" viewBox="0 0 25 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.10059 18.105C8.10059 18.1957 7.98828 18.2682 7.84668 18.2682C7.68555 18.2818 7.57324 18.2093 7.57324 18.105C7.57324 18.0143 7.68555 17.9417 7.82715 17.9417C7.97363 17.9281 8.10059 18.0007 8.10059 18.105ZM6.58203 17.9009C6.54785 17.9916 6.64551 18.0959 6.79199 18.1231C6.91895 18.1684 7.06543 18.1231 7.09473 18.0324C7.12402 17.9417 7.03125 17.8374 6.88477 17.7966C6.75781 17.7648 6.61621 17.8102 6.58203 17.9009ZM8.74023 17.8238C8.59863 17.8555 8.50098 17.9417 8.51562 18.046C8.53027 18.1367 8.65723 18.1957 8.80371 18.1639C8.94531 18.1322 9.04297 18.046 9.02832 17.9553C9.01367 17.8691 8.88184 17.8102 8.74023 17.8238ZM11.9531 0.445312C5.18066 0.445312 0 5.22076 0 11.5109C0 16.5404 3.4082 20.8442 8.27637 22.3589C8.90137 22.4632 9.12109 22.1049 9.12109 21.8101C9.12109 21.529 9.10645 19.978 9.10645 19.0256C9.10645 19.0256 5.68848 19.7058 4.9707 17.6741C4.9707 17.6741 4.41406 16.3544 3.61328 16.0143C3.61328 16.0143 2.49512 15.3023 3.69141 15.3159C3.69141 15.3159 4.90723 15.4066 5.57617 16.4859C6.64551 18.2365 8.4375 17.7331 9.13574 17.4338C9.24805 16.7082 9.56543 16.2048 9.91699 15.9054C7.1875 15.6243 4.43359 15.2569 4.43359 10.8942C4.43359 9.64701 4.80469 9.02117 5.58594 8.22299C5.45898 7.92821 5.04395 6.71281 5.71289 5.14367C6.7334 4.84889 9.08203 6.36814 9.08203 6.36814C10.0586 6.11418 11.1084 5.98266 12.1484 5.98266C13.1885 5.98266 14.2383 6.11418 15.2148 6.36814C15.2148 6.36814 17.5635 4.84435 18.584 5.14367C19.2529 6.71734 18.8379 7.92821 18.7109 8.22299C19.4922 9.02571 19.9707 9.65155 19.9707 10.8942C19.9707 15.2705 17.0947 15.6197 14.3652 15.9054C14.8145 16.2637 15.1953 16.944 15.1953 18.0097C15.1953 19.538 15.1807 21.4292 15.1807 21.8011C15.1807 22.0958 15.4053 22.4541 16.0254 22.3498C20.9082 20.8442 24.2188 16.5404 24.2188 11.5109C24.2188 5.22076 18.7256 0.445312 11.9531 0.445312ZM4.74609 16.0868C4.68262 16.1322 4.69727 16.2365 4.78027 16.3227C4.8584 16.3952 4.9707 16.427 5.03418 16.368C5.09766 16.3227 5.08301 16.2184 5 16.1322C4.92188 16.0596 4.80957 16.0279 4.74609 16.0868ZM4.21875 15.7195C4.18457 15.7785 4.2334 15.851 4.33105 15.8964C4.40918 15.9417 4.50684 15.9281 4.54102 15.8646C4.5752 15.8057 4.52637 15.7331 4.42871 15.6878C4.33105 15.6605 4.25293 15.6741 4.21875 15.7195ZM5.80078 17.334C5.72266 17.393 5.75195 17.529 5.86426 17.6152C5.97656 17.7195 6.11816 17.7331 6.18164 17.6605C6.24512 17.6016 6.21582 17.4655 6.11816 17.3793C6.01074 17.275 5.86426 17.2614 5.80078 17.334ZM5.24414 16.6673C5.16602 16.7127 5.16602 16.8306 5.24414 16.9349C5.32227 17.0392 5.4541 17.0846 5.51758 17.0392C5.5957 16.9803 5.5957 16.8623 5.51758 16.758C5.44922 16.6537 5.32227 16.6084 5.24414 16.6673Z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/putra-praditya-h-1a03532b1/" target="_blank">
+                            <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                                width="22" height="22" viewBox="0 0 22 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.89648 20.8424H0.361328V7.27793H4.89648V20.8424ZM2.62646 5.42762C1.17627 5.42762 0 4.31198 0 2.96506C1.03799e-08 2.31808 0.276716 1.69761 0.769274 1.24013C1.26183 0.782645 1.92988 0.525635 2.62646 0.525635C3.32305 0.525635 3.9911 0.782645 4.48366 1.24013C4.97621 1.69761 5.25293 2.31808 5.25293 2.96506C5.25293 4.31198 4.07617 5.42762 2.62646 5.42762ZM21.8701 20.8424H17.3447V14.2393C17.3447 12.6656 17.3105 10.6475 14.9868 10.6475C12.6289 10.6475 12.2676 12.3572 12.2676 14.1259V20.8424H7.73731V7.27793H12.0869V9.12825H12.1504C12.7559 8.0625 14.2349 6.9378 16.4414 6.9378C21.0312 6.9378 21.875 9.74502 21.875 13.3912V20.8424H21.8701Z" />
+                            </svg>
+                        </a>
+
+                        <span class="bg-secondary w-20 h-[1px] lg:w-[1px] lg:h-20"></span>
+                    </div>
+                </div>
+            </section>
+            <!-- hero section end -->
+
+            <!-- About me section start-->
+            <section id="about" class="pb-32 lg:pb-48">
+                <div class="px-4 lg:px-32 xl:px-52 lg:flex lg:gap-11">
+                    <div class="w-full">
+                        <div class="w-full flex items-center gap-5">
+                            <h4
+                                class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl uppercase">
+                                About
+                                me</h4>
+                            <span class="w-1/2 h-[1px] bg-textLight dark:bg-white block lg:w-3/4"></span>
+                        </div>
+                        <p class="mt-14 mb-7 dark:text-secondary text-paraVal">
+                            Saya lulusan Sekolah Menengah Kejuruan di SMKN 1 Jakarta dengan jurusan Rekayasa Perangkat Lunak dan memiliki 
+                            minat dalam pengembangan web. sekolah Rekayasa Perangkat Lunak selama 3 tahun  dan telah memberi
+                            saya banyak pengalaman dalam hal pemrograman, tetapi itu tidak membuat saya merasa puas.
+                            <br><br>
+                            Saat ini saya sedang menjelajahi framework PHP, Laravel. Sebagai Programmer/Developer, saya akan terus
+                            mengasah dan meningkatkan keterampilan saya dalam hal pemecahan masalah, dll.
+                            <br><br>
+                            Berikut beberapa Bahasa pemrograman yang baru-baru ini saya kerjakan:
+                        </p>
+                        <div class="flex gap-20">
+                            <ul class="text-primaryLight dark:text-primary">
+                                <li>Bootstrap</li>
+                                <li>Tailwindcss</li>
+                                <li>Express.js</li>
+                                <li>Laravel</li>
+                            </ul>
+                            <ul class="text-primaryLight dark:text-primary">
+                                <li>PHP</li>
+                                <li>typescript</li>
+                                <li>Go</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full mt-16">
+                        <div class="w-full">
+                            <div
+                                class="w-[300px] h-[300px] lg:w-[400px] border-2 border-textLight dark:border-primary mx-auto relative">
+                                <img src="dist/img/putra.jpeg" alt="putra"
+                                    class="absolute -left-7 -top-7 w-[300px] h-[300px] lg:w-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About me section end-->
+
+
+
+            <!-- built section start -->
+            <section id="built" class="pb-48 flex justify-center">
+                <div class="container lg:w-[85%] px-4 relative">
+                    <div class="stroke font-tungsten text-7xl lg:text-[200px] absolute -bottom-14 right-0 uppercase">
+                        Some Things
+                        I've
+                        built
+                    </div>
+                    <div class="w-full flex items-center gap-5 justify-center mb-10">
+                        <h4
+                            class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl grow-[1] uppercase">
+                            Some
+                            Things I've built
+                        </h4>
+                        <span class="w-1/2 h-[1px] bg-textLight dark: block lg:grow-[5]"></span>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="overflow-hidden swiper-slide group border-[0.2px] border-paraVal">
+                                <div class="overflow-hidden">
+                                    <img src="dist/img/project/lsp.png" alt="Web LSP" class="">
+                                </div>
+                                
+                                <div class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                                    <h5
+                                        class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                                        Professional Certification Registration</h5>
+                                    <h6
+                                        class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                                        Registration App – Fullstack • 2024</h6>
+                                    <div class="flex items-center gap-3">
+                                        <img src="dist/img/icon/laravel.svg" alt="laravel"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-ci">
+                                        <img src="dist/img/icon/bootstrap-5-1.svg" alt="Bootstrap"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-bs">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden swiper-slide group border-[0.2px] border-paraVal">
+                                <img src="dist/img/project/erooms.png" alt="Lost and Found" class="">
+                                <div
+                                    class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                                    <h5
+                                        class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                                        E-rooms</h5>
+                                    <h6
+                                        class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                                        E-rooms – Fullstack • 2023</h6>
+                                    <div class="flex items-center gap-3">
+                                        <img src="dist/img/icon/laravel.svg" alt="laravel"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-ci">
+                                        <img src="dist/img/icon/bootstrap-5-1.svg" alt="Bootstrap"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-bs">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden swiper-slide group border-[0.2px] border-paraVal">
+                                <img src="dist/img/project/sisarpras.png" alt="Library JGU" class="">
+                                <div
+                                    class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                                    <h5
+                                        class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                                        Sisarpras</h5>
+                                    <h6
+                                        class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                                        Si-sarpras – Fullstack • 2023</h6>
+                                    <div class="flex items-center gap-3">
+                                        <img src="dist/img/icon/laravel.svg" alt="laravel"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-ci">
+                                        <img src="dist/img/icon/bootstrap-5-1.svg" alt="bootstrap-5-1"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-tailwind">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden swiper-slide group border-[0.2px] border-paraVal">
+                                <img src="dist/img/project/up.png" alt="Web Evoting" class="">
+                                <div
+                                    class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                                    <h5
+                                        class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                                        Unit-produksi</h5>
+                                    <h6
+                                        class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                                        Unit-produksi – Back-End • 2024</h6>
+                                    <div class="flex items-center gap-3">
+                                        <img src="dist/img/icon/file-type-typescript-official.svg" alt="typescript"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-ci">
+                                        <img src="dist/img/icon/tailwind-css-2.svg" alt="Tailwind"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-bs">
+                                        <img src="dist/img/icon/golang-1.svg" alt="Go"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-bs">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden swiper-slide group border-[0.2px] border-paraVal">
+                                <img src="dist/img/project/static.png" alt="Web Evoting" class="">
+                                <div
+                                    class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                                    <h5
+                                        class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                                        sematic webb</h5>
+                                    <h6
+                                        class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                                        WEB smkn 1 jakarta – Fullstack 2024</h6>
+                                    <div class="flex items-center gap-3">
+                                        <img src="dist/img/icon/figma.svg" alt="figma"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-ci">
+                                        <img src="dist/img/icon/tailwind-css-2.svg" alt="Tailwind"
+                                            class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                            data-tooltip-target="tooltip-bs">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- built section end -->
+
+            <!-- project section start -->
+            <section id="project" class="pb-48">
+                <div class="container mx-auto project lg:w-[85%] relative">
+                    <h4
+                        class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl text-center uppercase">
+                        Noteworthy
+                        <span class="text-redval">Achievement</span>
+                    </h4>
+                    <a href="achievement.html">
+                        <h5
+                            class="font-semibold text-project dark:text-primary text-lg lg:text-xl mt-4 mb-5 text-center">
+                            View the archive</h5>
+                    </a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:gap-10">
+                        <div
+                            class="w-full dark:bg-project px-5 py-5 relative transition duration-500 ease-in-out group">
+                            <div class="relative">
+                                <div class="element-animate">
+                                </div>  
+                                <img src="dist/img/achievement/sertifikat20231006_13571867_page-0001.jpg" alt="Sertifikat Dicoding Javascript"
+                                    class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
+                            </div>
+                            <a href="#"
+                                class="font-semibold text-headingval dark:text-secondary dark:hover:text-primary text-lg lg:text-xl uppercase mt-6 mb-5 block transition duration-500 ease-in-out">
+                                <div class="flex gap-5 lg:gap-7">
+                                    <p class="text-xs dark:text-secondary text-headingval">2023</p>
+                                    <p class="text-xs dark:text-secondary text-redval">Certificate</p>
+                                </div>
+                                <h4 class="font-bold mt-4 lg:mt-5">Web peminjaman ruangan
+                                </h4>
+                            </a>
+                        </div>
+                        <div
+                            class="w-full dark:bg-project px-5 py-5 relative transition duration-500 ease-in-out group">
+                            <div class="relative">
+                                <div class="element-animate">
+                                </div>
+                                <img src="dist/img/achievement/WhatsApp Image 2024-03-04 at 15.07.12.jpeg" alt="Pelita Nusantara Vocational
+                                Highschool Certificate"
+                                    class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
+                            </div>
+                            <a href="#"
+                                class="font-semibold text-headingval dark:text-secondary dark:hover:text-primary text-lg lg:text-xl uppercase mt-6 mb-5 block transition duration-500 ease-in-out">
+                                <div class="flex gap-5 lg:gap-7">
+                                    <p class="text-xs dark:text-secondary text-headingval">2023</p>
+                                    <p class="text-xs dark:text-secondary text-redval">Certificate</p>
+                                </div>
+                                <h4 class="font-bold mt-4 lg:mt-5">web peminjaman barang</h4>
+                            </a>
+                        </div>
+                        <div
+                            class="w-full dark:bg-project px-5 py-5 relative transition duration-500 ease-in-out group">
+                            <div class="relative">
+                                <div class="element-animate">
+                                </div>
+                                <img src="dist/img/achievement/devcoach-127-back-end-menerapkan-normalisasi-database-di-rest-api-dengan-mudah-certificate_page-0001(1).jpg" alt="Pelita Nusantara Vocational
+                                Highschool Certificate"
+                                    class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
+                            </div>
+                            <a href="#"
+                                class="font-semibold text-headingval dark:text-secondary dark:hover:text-primary text-lg lg:text-xl uppercase mt-6 mb-5 block transition duration-500 ease-in-out">
+                                <div class="flex gap-5 lg:gap-7">
+                                    <p class="text-xs dark:text-secondary text-headingval">2024</p>
+                                    <p class="text-xs dark:text-secondary text-redval">Certificate</p>
+                                </div>
+                                <h4 class="font-bold mt-4 lg:mt-5">Beck-end Rest api
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="p-2 border-[1px] border-borderval dark:border-primary relative h-fit w-fit left-1/2 -translate-x-1/2">
+                        <div class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -left-1">
+                        </div>
+                        <div class="w-2 h-2 bg-bgVal z-[99] dark:bg-background absolute top-1 left-1">
+                        </div>
+                        <div class="w-2 h-2 bg-bgVal z-[99] dark:bg-background absolute bottom-1 right-1">
+                        </div>
+                        <div class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -right-1">
+                        </div>
+                        <a href="achievement.html" target="_blank"
+                            class="buttonAnimate relative text-textLight dark:text-primary dark:font-extralight w-72 py-2 px-10 border-[1px] border-textLight dark:border-primary text-center block mx-auto hover:text-bgLight dark:hover:text-background transition duration-300 ease-in">Show
+                            More</a>
+                    </div>
+
+                    <div
+                        class="stroke font-tungsten text-7xl lg:text-[250px] absolute bottom-10 lg:-left-[10%] uppercase -z-10">
+                        Achievement
+                    </div>
+                </div>
+            </section>
+            <!-- project section end -->
+
+            <!-- contact section start -->
+            <section id="contact" class="pb-40">
+                <div class="container mx-auto px-4">
+                    <h1
+                        class="font-bold lg:font-black font-tungsten dark:text-white text-7xl lg:text-8xl mb-5 lg:mb-20 text-center uppercase">
+                        Get in touch</h1>
+                    <p class="mb-20 text-center">Although I’m not currently looking for any new opportunities, my inbox
+                        is always open. Whether you have a question or just want to say hi, I’ll try my best to get back
+                        to you!</p>
+                    <a href="https://www.instagram.com/griz_zly9/"
+                        class="px-10 py-3 text-bgLight dark:text-background font-bold text-center block mx-auto bg-textLight dark:bg-primary w-72">Say
+                        Hello</a>
+                </div>
+            </section>
+            <!-- contact section end -->
+
+            <!-- footer start -->
+            <footer id="footer">
+                <div class="container px-4 py-8 mx-auto">
+                    <p class="dark:font-extralight text-base dark:text-secondary text-center">Built by <a
+                            href="https://github.com/Putrapraditya " class="dark:text-white font-semibold">Putra Praditya
+                            Hariyanotoro</a> Inspired by <a href="https://playvalorant.com/id-id/"
+                            class="dark:text-white font-semibold uppercase">Valorant</a></p>
+                </div>
+            </footer>
+            <!-- footer end -->
+
+            <!-- Tooltip Start -->
+
+            <!-- Fullstack Developer -->
+            <div data-popover id="popover-fullstack" role="tooltip"
+                class="absolute z-10 invisible inline-block text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600 overflow-hidden">
+                <div class="grid grid-cols-5">
+                    <div class="col-span-3 p-3">
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-gray-900 dark:text-white">About Fullstack Web Developer</h3>
+                            <p>A full-stack developer is a developer or engineer who can build both the front end and
+                                the back end of a website.</p>
+                            <a href="https://www.coursera.org/articles/full-stack-developer"
+                                class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700">Read
+                                more <svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <img src="https://builtin.com/sites/www.builtin.com/files/styles/og/public/full-stack-developer.jpg"
+                        class="h-full col-span-2 object-cover" alt="Fullstack Web Developer Illustration" />
+                </div>
+                <div data-popper-arrow></div>
+            </div>
+            <!-- Code Igniter -->
+            <div id="tooltip-ci" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                Codeigniter
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- Bootstrap -->
+            <div id="tooltip-bs" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                Bootstrap
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- Tailwind -->
+            <div id="tooltip-tailwind" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                Tailwind
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- Wordpress -->
+            <div id="tooltip-wp" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                Wordpress
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- PHP -->
+            <div id="tooltip-php" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                PHP
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- GSAP -->
+            <div id="tooltip-gsap" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                GSAP
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- PHPMailer -->
+            <div id="tooltip-mailer" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                PHPMailer
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- Figma -->
+            <div id="tooltip-figma" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-xs text-black bg-white rounded-lg shadow-sm opacity-0 tooltip">
+                Figma
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <!-- Tooltip End -->
+        </main>
+
+
+        <div class="h-full w-[0.5px] bg-paraVal absolute top-0 left-[1%] lg:left-[7%] z-[-999999999999]"></div>
+    </div>
+    <!-- to top -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- Pace JS (Loading) -->
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <script src="dist/js/jquery.bez.js"></script>
+    <!-- Flowbite (Component) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- Barba JS (Transition) -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/prefetch@2.1.10/dist/barba-prefetch.umd.min.js"></script>
+    <!-- GSAP (Animation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="dist/js/script.js"></script>
+    <script src="dist/js/transition.js"></script>
+</body>
+
+</html>

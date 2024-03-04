@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold);
+@import url(//db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular);
+
+@font-face {
+  font-family: "Tungsten Bold";
+  font-weight: 900;
+  src: url("../font/Tungsten-Black.otf");
+}
+
+@font-face {
+  font-family: "Tungsten Bold";
+  font-weight: 700;
+  src: url("../font/Tungsten-Bold.otf");
+}
+
+@font-face {
+  font-family: "DINNextW1G-Regular";
+  src: url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot");
+  src: url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff") format("woff"), url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular") format("svg");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.element-animate {
+  transform-origin: 0 0;
+  @apply before:content-[""] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:dark:bg-primary before:z-[9] before:bg-redval before:transition before:duration-300 before:ease-in-out scale-x-0 group-hover:scale-x-100 absolute w-full h-full z-[9] transition duration-200 ease-in opacity-50;
+}
+
+.buttonAnimate {
+  transform-origin: 0 0;
+  @apply before:content-[""] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:dark:bg-primary before:bg-textLight before:z-[-1] before:transition before:duration-300 before:ease-in-out after:content-[""];
+}
+
+.buttonAnimate2::before {
+  transform-origin: 0 0;
+  @apply content-[""] absolute left-0 top-0 w-full h-full bg-primary z-[-1] transition duration-500 ease-in-out;
+}
+
+.buttonAnimate::before,
+.buttonAnimate2::before {
+  transform: scaleX(0);
+}
+
+.buttonAnimate:hover::before,
+.buttonAnimate2:hover::before {
+  transform: scaleX(1);
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] bg-lightval dark:bg-white block my-2;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+#work ul li {
+  @apply bg-[url('../img/arrow-light.png')] dark:bg-[url('../img/arrow.png')] bg-no-repeat pl-7 mb-2;
+}
+#work .mytabs .tab {
+  display: none;
+}
+
+#work input[type="radio"]:checked + label {
+  @apply border-l-2 border-textLight dark:border-primary bg-textLight dark:bg-primary bg-opacity-20 dark:bg-opacity-20;
+}
+
+.loading-screen {
+  @apply relative pl-0 pr-0 pt-0 bg-textLight dark:bg-primary w-0 h-full;
+}
+
+.load-container {
+  @apply fixed top-0 left-0 w-full h-[100vh] overflow-hidden z-[999999] pointer-events-none;
+}
+
+.text {
+  @apply hidden;
+}
+
+#toggleMode:checked + label {
+  background-color: #f0eef0 !important;
+}
+
+#toggleMode:checked + label .ball {
+  transform: translateX(20px);
+  background-color: #020c1b;
+}
+
+.pace {
+  @apply pointer-events-none select-none z-[9999999] fixed m-auto top-0 left-0 right-0 bottom-0 w-[400px] border-none h-[1px] overflow-hidden bg-[#1b1b1b];
+}
+
+.pace .pace-progress {
+  @apply box-border max-w-[90vw] absolute z-[999999999] block top-0 right-full h-full w-full bg-white;
+}
+
+.pace.pace-inactive {
+  @apply hidden;
+}
+
+#preloader {
+  @apply w-full h-[100vh] bg-blackval overflow-hidden fixed ease-bez-loading z-[99999];
+}
+
+.p {
+  @apply absolute top-[40%] left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-6xl lg:text-7xl font-bold lg:font-black font-tungsten uppercase;
+}
+
+.stroke {
+  /* Prefix required. Even Firefox only supports the -webkit- prefix */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #768079;
+  -webkit-text-fill-color: transparent;
+}
